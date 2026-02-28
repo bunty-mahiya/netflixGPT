@@ -12,12 +12,12 @@ const useMovieData = () => {
         addMovieData(json)
       )  
     } catch (error) {
-      console.log("something error from json Data", error);
     }
   };
   useEffect(() => {
     !selectMovieData && handleData()
-  }, []);
+
+  });
 };
 
 export default useMovieData;
